@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- STYLEHSEETS -->
+    <link rel="stylesheet" href="/style/cards.css" />
+    <link rel="stylesheet" href="/style/general.css" />
+    <link rel="stylesheet" href="/style/modal.css" />
+  </head>
+  <body>
+    <!-- space -->
+    <div class="container">
+      <!-- space -->
+      <div class="header">
+        <h3>Library</h3>
+        <!-- modal -->
+        <p>
+          <button id="showDialog">Show the dialog</button>
+        </p>
+        <dialog id="dialogElement">
+          <form>
+            <button id="close" value="cancel" formmethod="dialog">Close</button>
+
+            <p>
+              <label for="book">Book:</label>
+              <input type="text" id="book" required data-book />
+
+              <label for="author">Author:</label>
+              <input type="text" id="author" required data-author />
+
+              <label for="pages">Pages</label>
+              <input type="number" id="pages" required data-pages />
+
+              <label for="text">Read already?</label>
+              <input type="text" id="read" required data-read />
+            </p>
+            <div>
+              <button type="submit" id="addBtn" value="default">
+                Add book
+              </button>
+            </div>
+          </form>
+        </dialog>
+        <output></output>
+      </div>
+
+      <div class="cards-container">
+        <div class="card-itself">
+          <p class="book-title">title 1</p>
+          <p class="author">author 1</p>
+          <p class="pages">pages 1</p>
+          <p class="read">read or not read 1</p>
+        </div>
+
+        <div class="card-itself">
+          <p class="book-title">title 2</p>
+          <p class="author">author 2</p>
+          <p class="pages">pages 2</p>
+          <p class="read">read or not read 2</p>
+        </div>
+
+        <!-- space -->
+      </div>
+      <!-- space -->
+    </div>
+    <!-- space -->
+
+    <script src="script.js"></script>
+    <!-- <script src="modal.js"></script> -->
+  </body>
+</html>

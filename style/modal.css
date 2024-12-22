@@ -1,0 +1,4 @@
+::backdrop {
+  backdrop-filter: blur(10px);
+    opacity: 0.75;
+  }
