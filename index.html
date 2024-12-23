@@ -33,8 +33,14 @@
               <label for="pages">Pages</label>
               <input type="number" id="pages" required data-pages />
 
-              <label for="text">Read already?</label>
-              <input type="text" id="read" required data-read />
+              <label for="read">Read already?</label>
+              <input
+                class="card-checkbox"
+                type="checkbox"
+                id="read"
+                required
+                data-read
+              />
             </p>
             <div>
               <button type="submit" id="addBtn" value="default">
@@ -48,14 +54,14 @@
 
       <div class="cards-container">
         <div class="card-itself">
-          <p class="book-title">title 1</p>
+          <h3 class="book-title">title 1</h3>
           <p class="author">author 1</p>
           <p class="pages">pages 1</p>
           <p class="read">read or not read 1</p>
         </div>
 
         <div class="card-itself">
-          <p class="book-title">title 2</p>
+          <h3 class="book-title">title 2</h3>
           <p class="author">author 2</p>
           <p class="pages">pages 2</p>
           <p class="read">read or not read 2</p>
