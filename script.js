@@ -44,7 +44,10 @@ function addBookToLibrary() {
   }
 
 function displayBook(){
+  cardsContainer.innerHTML = ''; 
+
   // cardsContainer.innerHTML = '';
+  // add splice ??
   myLibrary.forEach(book => {
     const bookCard = createBookCard(book);
     cardsContainer.append(bookCard);
@@ -89,7 +92,7 @@ function clearInputs() {
   read.checked = false;
 }
 
-// add a remove button on card
-// add a function to make value of read to unread
-// function to splice displays
-// add css styling
+// functionalities to be implemented
+//Add a button on each book’s display to remove the book from the library.
+
+//Add a button on each book’s display to change its read status
